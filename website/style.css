@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f1e4;
+    color: #5a3e36;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 4px solid #000;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .carousel img {
+        height: 500px;
+    }
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #b38b6d; /* Navigation bar color */
+    padding: 10px;
+    text-align: left;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+.navbar a:hover {
+    background-color:#fff;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #8c6748; /* Kulay ng navbar */
+    z-index: 1000; /* Siguraduhin nasa ibabaw */
+}
+
+
+
+/* Hero Section with Parallax */
+.hero {
+    
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Sections */
+.section {
+    padding: 40px;
+    text-align: center;
+    border-bottom: 2px solid #d3b8a1;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #8c6748;
+}
+.card img {
+    width: 150px; /* Parehong laki */
+    height: 150px;
+    border-radius: 50%; /* Ginagawang bilog */
+    object-fit: cover; /* Para hindi ma-stretch */
+    margin: 0 auto 10px; /* Center align */
+    display: block; /* Para ma-center */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth effect */
+}
+
+.card img:hover {
+    transform: scale(1.1); /* Lumalaki ng bahagya kapag naka-hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Nagdadagdag ng shadow effect */
+}
+
+
+/* Parallax Background Sections */
+.parallax {
+    background: url('image/background.jpg') center/cover fixed;
+    height: 70px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #8c6748;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #5a3e36;
+}
+.btn {
+    outline: none;  /* Alisin ang blue outline */
+    border: none;   /* Siguraduhin walang border */
+}
+
+.btn:focus {
+    outline: none;  
+    box-shadow: none; /* Alisin ang shadow na lumalabas */
+}
+
+.card-stories{
+    background-color:  #b38b6d;
+}
+
+/* Footer */
+.footer {
+    background-color: #b38b6d; /* Match the navigation bar color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    
+}
+.footer a {
+    color: #fff; /* Default na kulay ng links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.footer a:hover {
+    color: #ffcc00; /* Kulay kapag tinapatan ng mouse */
+}
+.icecream-footer ul {
+    padding: 0;
+    list-style: none;
+}
+.icecream-footer ul li {
+    margin-bottom: 10px;
+}
+.icecream-footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/* .icecream Section */
+.icecream {
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    text-align: center;
+}
+
+.icecream:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.icecream h1 {
+    font-size: 1.5rem; /* Size of the product name */
+    color: #333; /* Dark color for the text */
+    font-weight: 700; /* Bold title */
+    margin-bottom: 15px; /* Spacing between title and description */
+}
+
+.icecream p {
+    font-size: 1rem; /* Size of the description and price */
+    color: #666; /* Subtle text color */
+    margin-bottom: 10px; /* Spacing between description and price */
+}
+
+.icecream .btn {
+    font-size: 1rem; /* Button text size */
+    padding: 10px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for the button */
+    /* Primary button color */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    text-transform: uppercase; /* Uppercase button text */
+    font-weight: bold;
+}
+
+.icecream .btn:hover {
+    background-color:#5a3e36; /* Darker blue on hover */
+}
+
+.icecream img {
+    width: 100%; /* Ensure image takes the full width of its container */
+    height: 300px; /* Set a fixed height for the image */
+   /* Crop or scale the image to fill the container without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+    margin-bottom: 15px; /* Spacing between image and title */
+}
+.contact {
+    background-image: url('image/background.jpg'); /* Change to your image path */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Makes the text readable */
+    padding: 50px 0; /* Adds spacing */
+}
